@@ -1,0 +1,4 @@
+#!/bin/bash
+
+## For resizing and converting svg icons to png format with nice quality. Modify to your liking.
+find -name "*.svg" -exec inkscape --export-png={}.png --export-dpi=200 --export-background-opacity=0 -w 128 -h 128 --without-gui {} \;
